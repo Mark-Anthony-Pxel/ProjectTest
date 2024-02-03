@@ -1,0 +1,68 @@
+@media only screen and (max-width:800px) {
+  #name {
+    font-size: 55px;
+  }
+}
+
+@font-face {
+  font-family: pixel;
+  src: url(PixelifySans-VariableFont_wght.ttf);
+}
+
+html, body {
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#myVideo {
+    top: 0;
+    right: 0;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .name {
+    bottom: 30%;
+    width: 100%;
+    color: rgb(249, 231, 255);
+    position: fixed;
+    text-align: center;
+    font-family: 'pixel', Courier, monospace;      
+  -webkit-animation: glow 10s ease-in-out infinite alternate;
+  -moz-animation: glow 10s ease-in-out infinite alternate;
+   animation: glow 10s ease-in-out infinite alternate;
+
+  }
+
+  .text {
+    font-size: 90px;
+  }
+
+@keyframes glow {
+   from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ae22ff, 0 0 40px #b055ff, 0 0 50px #aa33fa, 0 0 60px #b829ff, 0 0 70px #bf00ff;
+   }
+   to {
+     text-shadow: 0 0 15px #fff, 0 0 25px #71f1fc, 0 0 40px #4deffe, 0 0 45px #38eeff, 0 0 55px #2aedff, 0 0 65px #25edff, 0 0 75px #12ebff;
+   }}
+
+   .profile-img {
+    width: 120px;
+    opacity: .8;
+    border-radius: 10px;
+   }
+
+   .early-button {
+    color: azure;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border-color: #12ebff;
+    background-color: #aa33fa;
+   }
+   
+   
