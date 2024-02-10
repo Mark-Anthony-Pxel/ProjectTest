@@ -1,0 +1,143 @@
+@media screen and (max-width:1000px){
+     #bar {
+        display: block;
+        flex-direction: column;
+        font-size: 400;
+        font-weight: 600;
+        animation: right 2s ease-in;
+    }
+    a.side-iconbase {
+        margin: 0;
+    }
+
+
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(/Fonts/PixelifySans-VariableFont_wght.ttf);
+}
+
+* {
+     margin: 0;
+     color: #f1f1f1;
+}
+
+body {
+    background-color: #010101;
+    background-repeat: no-repeat;
+    background-image: url(/Img/earth-3866609_1920.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.topBar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 8vh;
+}
+
+.sidebar {
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    left: right;
+    animation: right 2s ease-in-out;
+}
+
+.topicon, a {
+    color: #f1f1f1;
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.topicon {
+    margin: 5px 5px;
+    padding: 15px 10px;
+    transition-duration: .5s;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-radius: 4px;
+    width: 100%;
+    }
+
+.topicon:hover {
+    padding: 16px 10px;
+    color: rgb(109, 0, 212);
+    background: rgb(241, 241, 241);
+    border-radius: 2px;
+    box-shadow: 2px 5px 10px #f1f1f1,
+    2px 5px 20px #f1f1f1;
+}
+
+.presentation {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 1rem;
+    width: 70%;
+    text-transform: uppercase;
+}
+
+div.animation {
+    transition-duration: 2s;
+    animation: up 4s ease-out ;
+    transform: translate(15px, 40%);
+    opacity: 1;
+}
+
+
+@keyframes up {
+    0% {
+        transform: translate(0px, 0%);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translate(15px, 40%);
+        opacity: 1;
+    }
+}
+
+@keyframes right {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.style-main {
+    margin-top: 20px;
+}
+
+span.logo {
+    font-size: 20px;
+    margin: 20px;
+    position: absolute;
+    left: 0;
+    flex-direction: row;
+    display: flex;
+}
+
+.-ticon {
+    padding-right: 5px;
+}
+
+.side-iconbase {
+    margin: 0 10px;
+}
+
+
+
